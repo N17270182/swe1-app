@@ -3,12 +3,13 @@ python:
   - "3.8"
 
 install:
+  - cd mysite
   - pip install -r requirements.txt
 
 script:
   - black ./
   - flake8 ./
-  - coverage run ratenyu/manage.py test
+  - coverage run mysite/manage.py test
 
 after_success:
   coveralls
