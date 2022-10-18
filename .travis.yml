@@ -12,3 +12,14 @@ script:
 
 after_success:
   coveralls
+
+deploy:
+  provider: elasticbeanstalk
+  access_key_id: AKIA5RHF3MBNLJWYWJPG
+  secret_access_key: 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
+  region: us-east-1
+  app: swe1-app
+  env: django-env
+  bucket_name: elasticbeanstalk-us-east-1-930342461530
+  on:
+    branch: main
