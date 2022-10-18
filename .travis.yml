@@ -19,7 +19,7 @@ deploy:
   secret_access_key: N15Nua5cS7vgPbr2832fi/RZBrChI8nMkJDiA0Hh
   region: us-east-1
   app: swe1-app
-  env: django-env
+  env: venv
   bucket_name: elasticbeanstalk-us-east-1-930342461530
   on:
     branch: main
