@@ -8,7 +8,7 @@ install:
 script:
   - black ./
   - flake8 --max-line-length=130 --ignore=F405,F403,F541,W503,E231,E722
-  - coverage run -a --source="." manage.py test
+  - coverage run -a --source="." mysite/manage.py test
 
 after_success:
   coveralls
